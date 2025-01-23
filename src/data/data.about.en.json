@@ -1,0 +1,19 @@
+{
+    "title": "Airbnb's values",
+    "description": "Welcome to Airbnb, your go-to platform for finding unique accommodations...",
+    "accordions": [
+      {
+        "title": "Reliability",
+        "content": "The listings posted on Airbnb guarantee complete reliability..."
+      },
+      {
+        "title": "Service",
+        "content": "Our teams are at your disposal to provide you with a perfect experience..."
+      },
+      {
+        "title": "Trust",
+        "content": "At Airbnb, we prioritize building trust with our users by ensuring..."
+      }
+    ]
+  }
+  

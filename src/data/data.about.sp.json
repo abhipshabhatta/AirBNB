@@ -1,0 +1,19 @@
+{
+    "title": "Los valores de Airbnb",
+    "description": "Bienvenido a Airbnb, tu plataforma de referencia para encontrar alojamientos únicos...",
+    "accordions": [
+      {
+        "title": "Fiabilidad",
+        "content": "Los anuncios publicados en Airbnb garantizan una fiabilidad total..."
+      },
+      {
+        "title": "Servicio",
+        "content": "Nuestros equipos están a tu disposición para ofrecerte una experiencia perfecta..."
+      },
+      {
+        "title": "Confianza",
+        "content": "En Airbnb, damos prioridad a establecer la confianza con nuestros usuarios garantizando..."
+      }
+    ]
+  }
+  
