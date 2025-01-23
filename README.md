@@ -1,1 +1,1 @@
-# AirBNB
+# AirBNB app - React.js
