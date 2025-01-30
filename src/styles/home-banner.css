@@ -1,34 +1,55 @@
 .home-banner {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+    max-height: 130px;
+    overflow: hidden;
     position: relative;
-    width: 100%;
-    height: auto;
-    margin-bottom: var(--space-size);
-    text-align: center;
-    color: #fff; /* Text over the banner image is white */
 }
+
 
 .home-banner img {
-    width: 100%;
-    height: auto;
-    max-height: 300px;
-    object-fit: cover;
-    filter: brightness(60%); /* Darken the image a bit */
+    transform: translateY(-32px);
 }
+
 
 .home-banner h2 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     font-size: 24px;
-    padding: 0 1em;
+    font-weight: 400;
+    left: 16px;
+    max-width: 222px;
+    position: absolute;
+    z-index: 1;
 }
 
-@media (min-width: 768px) {
-    .home-banner img {
-        max-height: 450px;
+.home-banner::after {
+    background-color: rgba(0, 0, 0, .4);
+    content: "";
+    height: 100%;
+    mix-blend-mode: darken;
+    position: absolute;
+    width: 100%;
+}
+
+
+/* larger screens */
+@media only screen and (min-width: 768px) {
+    .home-banner {
+        max-height: 223px;
     }
+
+    .home-banner img {
+        transform: translateY(-210px);
+    }
+
     .home-banner h2 {
-        font-size: 38px;
+        font-size: 48px;
+        font-weight: 400;
+        max-width: none;
+        width: 100%;
+        position: absolute;
+        z-index: 1;
+        text-align: center;
     }
 }

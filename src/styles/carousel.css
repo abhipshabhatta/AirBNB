@@ -1,53 +1,78 @@
+
 .carousel {
-    position: relative;
-    width: 100%;
-    height: auto;
-    margin-bottom: var(--space-size);
-}
-
-.carousel-item {
-    width: 100%;
-    height: auto;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    /* max-height: 305px; */
+    min-height: 240px;
+    overflow: hidden;
     position: relative;
 }
 
-.carousel-item img {
-    width: 100%;
-    height: auto;
-    max-height: 400px;
-    object-fit: cover;
-    border-radius: 8px;
-}
-
-.back-arrow,
-.forward-arrow {
+.carousel .carousel-item {
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    inset: 0;
+}
+
+.carousel img {
+    aspect-ratio: 335/ 224;
+    object-fit: cover;
+}
+
+.carousel button {
+    position: relative;
+    z-index: 10;
     border: none;
-    background-color: transparent;
     cursor: pointer;
-    width: 48px;
-    height: 48px;
+    background-color: rgba(128, 128, 128, 0.281);
+    padding: .5em;
 }
 
-.back-arrow {
-    left: 10px;
+.carousel .eye-icon:hover {
+    opacity: .8;
 }
 
-.forward-arrow {
-    right: 10px;
+.carousel .eye-icon button {
+    justify-content: center;
 }
 
-.back-arrow img,
-.forward-arrow img {
-    width: 48px;
-    height: 48px;
-    filter: drop-shadow(0 1px 2px rgba(0,0,0,0.5));
+.carousel .eye-icon img {
+    aspect-ratio: unset;
+    object-fit: contain;
 }
 
-@media (min-width: 768px) {
-    .carousel-item img {
-        max-height: 600px;
+.carousel .eye-icon {
+    max-width: 100%;
+    position: absolute;
+    left: 45%;
+    top: 50%;
+    width: 60px;
+    height: 60px;
+    transform: translate(-25%,-48%);
+    transition: opacity .25s ease-in-out;
+}
+
+@media only screen and (min-width: 768px) {
+    .carousel .eye-icon {
+      left: 50%;
+      width: 80px;
+      height: 80px;
+      transform: translate(-25%,-48%);
+      opacity: .2;
+    }
+  }
+
+/* larger screens */
+@media only screen and (min-width: 768px) {
+    .carousel {
+        min-height: 410px;
+    }
+
+    .carousel button {
+        padding: 2.5em 1.5em;
+    }
+
+    .carousel button img {
+        min-width: 40px;
     }
 }

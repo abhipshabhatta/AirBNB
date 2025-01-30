@@ -1,7 +1,7 @@
 :root {
-    --main-clr: #ff6060;    /* AirBNB main accent color */
-    --font-clr: #fff;       /* Default font color (white) */
-    --footer-bg: #000;      /* Footer text color or background color in some sections */
-    --max-page-width: 1200px;
-    --space-size: 24px;
+    --font-clr: #e2e2e2;
+    --main-clr: #DB2777;
+    --footer-bg: #1b060e;
+    --space-size: 1em;
+    --max-page-width: 1240px;
 }
